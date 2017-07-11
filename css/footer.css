@@ -1,0 +1,31 @@
+footer{
+    width: 1170px;
+    height: 107px;
+    background-color: #F0F0F0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.footer__container{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.footer__text{
+    color: slategray;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+}
+
+.footer__text a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.footer__text_emphasized{
+    color:darkorchid;
+    display: inline-block;
+}
