@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'source-sans-pro';
-    src: url(fonts/SourceSansPro-Black.otf); 
-    src: url(fonts/SourceSansPro-Blacklt.otf); 
-    src: url(fonts/SourceSansPro-Bold.otf); 
-    src: url(fonts/SourceSansPro-ExtraLight.otf); 
-    src: url(fonts/SourceSansPro-ExtraLightIt.otf); 
-    src: url(../fonts/SourceSansPro-lt.otf); 
-    src: url(../fonts/SourceSansPro-LightIt.otf); 
-    src: url(../fonts/SourceSansPro-Regular.otf); 
-    src: url(../fonts/SourceSansPro-Semibold.otf);
-    src: url(../fonts/SourceSansPro-SemiboldIt.otf); 
-    font-weight: normal;
-    font-style: normal;
-}
 
 .options{
     height: 546px;
@@ -20,23 +5,23 @@
 }
 
             /****       text    ****/
-.options__text{
-    font-family: source-sans-pro;
+.text--options{
+    font-family: 'source-sans-pro';
     text-align: center;
 }
 
-.options__text h2{
+.text--top{
     color: #d46ab7;
     font-size: 30px;
     max-height: 10px;
 }
 
-.options__text h5{
+.text--middle{
     color: #fab905;
     font-size: 20px;
 }
 
-.options__text-content{
+.text--content{
     color: gray;
     width: 70%;
     margin: auto;
@@ -44,62 +29,53 @@
     bottom: 15px;
 }
 
-
          /****    pictures and buttons   ****/
-.options__pics{
+.slider{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.options__pics a{
+.arrow__previous, .arrow__next{
     display: block;
     width: 33px;
     height: 33px;
 }
 
-.options__pics-arrow{
+.arrow{
     width: 33px;
     height: 33px;
     position: relative;
     bottom: 100px;
 }
 
-.options__pics__button-left{
+.arrow__previous{
     float: left;
     left: 150px;
 }
 
-.options__pics__button-left::after{
+.arrow__previous::after{
     content: url(../images/arrowLeft.png); 
     display: block;
-
 }
 
-.options__pics__button-right{
+.arrow__next{
     bottom: 350px;
     left: 700px;
 }
 
-.options__pics__button-right::after{
+.arrow__next::after{
     content: url(../images/arrowRight.png); 
     display: block;
-    width: 33px;
-    height: 33px;
 }
 
-.options__mainPicture{
+.slider__main-picture{
     height: 35%;
     margin: 35px 60px;
 }
 
-
-.options__mainPicture-photo{
-    width: initial;
-}
-
-.options__mainPicture-screen{
+.slider__screen{
     border-width: 0px;
     border-style: solid;
     border-color: black;
@@ -110,7 +86,6 @@
     height: 168px;
     width: 251px;
     background-image: url(../images/mainPhoto.png);
-    background-position-x: -607px;
-    background-position-y: 504px;
+    background-position: center center;
     background-size: cover;
 }
