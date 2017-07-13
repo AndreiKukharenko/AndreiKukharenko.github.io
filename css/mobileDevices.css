@@ -5,53 +5,48 @@
     width: 1170px;
 }
 
-.mobileDevices__pictures{
+.picture{
     float:left;
 }
 
-.mobileDevices__pictures--tablet{
+.picture__tablet{
     margin-LEFT: 20px;
     margin-top: 20px;
     position: relative;
-    z-index: 1;
 }
 
-.mobileDevices__pictures--phone{
+.picture__phone{
     margin-left: -20px;
 }
 
 .mobileDevices__text{
     font-family: 'source-sans-pro';
-    padding-top: 30px;
+    padding-top: 15px;
     padding-left: 70px;
-    width: 60%;
+    width: 65%;
+    height: 90%;
     font-size: 20px;
     margin-left: 250px;
+    position: relative;
 }
 
-.mobileDevices__text--header-top{
+.description__first-header, .description__second-header{
     color: white;
 }
 
-.mobileDevices__text--header-bottom{
-    color: white;
-}
-
-.mobileDevices__text--maintext{
+.description__main-text{
     color: #fab905;
     text-align: justify;
+    overflow: auto;
+    height: 40%;
 }
 
-.mobileDevices__button {
-    border-radius: 7px;
-    font-family: inherit;
+.button__background--white {
     color: #AC6F7F;
     background: white;
-    padding: 10px 15px 10px 15px;
-    border: solid black 0px;
-    cursor: pointer;
+    margin: 10px 0px;
 }
 
-.mobileDevices__button:hover {
+.button__background--white:hover {
     background: violet;
 }

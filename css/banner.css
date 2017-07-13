@@ -10,20 +10,22 @@
     font-family: 'source-sans-pro';
     background-clip: content-box;
     text-align: center;
-    padding-top: 180px; 
+    padding-top: 200px; 
 }
 
-.banner__text--link{
+.banner-text__link--white{
     text-decoration: none;
     color: white;
 }
 
-.banner__text--top{
-    background-color: #AC6F7F;
+.banner-text__first-line{
     font-size: 45px;
+    background-color: #AC6F7F;
+    display: inline;
 }
 
-.banner__text--bottom{
-    background-color: #AC6F7F;
+.banner-text__second-line{
     font-size: 40px;
+    background-color: #AC6F7F;
+    display: inline;
 }

@@ -15,7 +15,7 @@ header{
     height: 100%;
 }
 
-.header__logo--picture{
+.logo__picture{
     position: relative;
     top: 10px;
     left: 15px;
@@ -25,17 +25,17 @@ header{
     height: 55px;
 }
 
-.header__logo-text{
+.logo__text{
     margin: -35px 0px 0px 75px;
 }
 
-.header__logo-text--top, .header__logo-text--bottom{
+.logo__text-first-line, .logo__text-second-line{
     color:gray;
     font-size: 20px;
     margin: auto;
 }
 
-.header__logo-text--bottom{
+.logo__text-second-line{
     font-size: 15px;
 }
      
@@ -43,35 +43,49 @@ header{
 .navigation{
     margin: auto;
     list-style-type: none;
-    height: inherit;
+    height: 100%;
     display: inline-block;
     width: 80%;
 }
 
 .navigation__buttons{
     font-family: 'source-sans-pro';
+    font-weight: bold;
     float: right;
-    margin-top: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 .navigation__list{
 	margin: 0;
-	padding: 0;
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .navigation__item{
-	list-style-position: inside;
 	display: inline-block;
-	padding: 10px 30px;
-	margin: 0;
-	font: 14px 'source-sans-pro';
+    width: 13%;
+    height: 100%;
 }
 
 .navigation__link {
 	color: #b2b2b2;
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
 }
 
-.navigation__link:hover {
-  color: #FCBD1A; 
+.navigation__link:hover {   
+    color: #FCBD1A; 
+}
+
+.navigation__link:focus {
+    color: white;
+    background-color: #FCBD1A;
 }
