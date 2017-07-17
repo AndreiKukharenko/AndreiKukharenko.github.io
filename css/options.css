@@ -1,7 +1,6 @@
 
 .options{
-    height: 546px;
-    width: 100%;
+    max-width: 100%;
 }
 
             /****       text    ****/
@@ -15,9 +14,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: -100px;
 }
 
-.arrow__previous, .arrow__next{
+.arrow-link__previous, .arrow-link__next{
     display: block;
     width: 33px;
     height: 33px;
@@ -30,29 +30,37 @@
     bottom: 100px;
 }
 
-.arrow__previous{
+.arrow-link__previous{
     float: left;
     left: 150px;
 }
 
-.arrow__previous::after{
+.arrow-link__previous::after{
     content: url(../images/arrowLeft.png); 
     display: block;
 }
 
-.arrow__next{
+.arrow__previous{
+    order: 1;
+}
+
+.arrow-link__next{
     bottom: 350px;
     left: 700px;
 }
 
-.arrow__next::after{
+.arrow-link__next::after{
     content: url(../images/arrowRight.png); 
     display: block;
 }
 
+.arrow__next{
+    order:3;
+}
+
 .slider__main-picture{
     height: 35%;
-    margin: 35px 60px;
+    order: 2;
 }
 
 .slider__screen{
@@ -68,4 +76,17 @@
     background-image: url(../images/mainPhoto.png);
     background-position: center center;
     background-size: cover;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .arrow__previous{
+        left: 50px;
+    }
+
+    .arrow__next{
+        right: 50px;
+    }
+
 }

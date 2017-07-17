@@ -1,32 +1,29 @@
 
 .entertainments{
-    height: 303px;
-    width: 1170px;
-    display: flex;
+    /*height: 303px;*/
+    max-width: 100%;
 }
-
 
 /****     BOXES AND IMAGES  ****/
 
 .box__image{
     float: left;
-    height: 95px;
+    /*height: 95px;*/
     width: 95px;
     padding-top: 55px;
 }
 
-.box--rocket, .box--microphone{
-    padding-left: 45px;
-    height: 100%;
-    display: flex;
+.box{
+    padding-left: 30px;
     justify-content: center;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .box--rocket{
-    box-sizing: border-box;
-    border-right: grey;
-    border-right-width: 2px;
-    border-right-style: solid;
+    border-right: grey solid 2px;
+    float: left;
 }
 
 /* text properties */
@@ -45,4 +42,21 @@
 
 .button__background--yellow:hover {
     background: #bd4a9e;
+}
+
+@media screen and (max-width: 800px){
+    
+    .box{
+        width: inherit;
+    }
+
+    .box--rocket{
+    border-bottom: grey solid 2px;
+    border-right-style: none;
+    }
+
+    .button__background--yellow{
+    float: right;
+    margin: 0;
+    }    
 }

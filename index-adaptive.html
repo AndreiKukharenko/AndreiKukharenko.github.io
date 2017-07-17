@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Site Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Адаптивный</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
@@ -22,7 +23,9 @@
 
         <header  class="header">
             <div class="header__logo logo">
-                <a href="#"><div class="logo__picture"></div></a>              
+                <a href="#" class="logo__link">
+                    <div class="logo__picture"></div>
+                </a>
             
                 <div class="logo__text">
                     <p class="logo__text-first-line">Site name</p>
@@ -56,7 +59,7 @@
         <section class="banner">
             <div class="banner__text banner-text">
                 <h2 class="banner-text__first-line">
-                    <a href="#" class="banner-text__link--white">Alivuam tinc</a>
+                    <a href="#" class="banner-text__link--white">ADAPTIVE</a>
                 </h2>
                 <br/><br/>
                 <h2 class="banner-text__second-line">
@@ -89,7 +92,7 @@
         </section>
 
 
-        <section class="entertainments">
+        <section class="entertainments clearfix"> <!-- alternative - display:flow-root -->
             <div class="box box--rocket">
                     <div class="box__image box__image--rocket">
                         <img src="images/rocket.png" alt="rocket">
@@ -166,18 +169,19 @@
             </div>
 
             <div class="slider">
-                <div class="arrow">
-                    <a href="#" class="arrow__previous"></a>
-                </div>       
+                <div class="arrow arrow__previous">
+                    <a href="#" class="arrow-link__previous"></a>
+                </div>
+                <div class="arrow arrow__next">
+                    <a href="#" class="arrow-link__next"></a>
+                </div>
                 <div class="slider__main-picture">
                     <img src="images/notebookPic.png" alt="notebookPic">
                 
                     <div class="slider__screen">                   
                     </div>
                 </div>
-                <div class="arrow">
-                    <a href="#" class="arrow__next"></a>
-                </div>
+
             </div>
         </section>
 
@@ -191,7 +195,7 @@
                     </a>
                 </span>
 
-                <span>/Images from:
+                <span class="footer__text--part-two">/Images from:
                     <a href="http://www.wallpaperswide.com" class="footer__text--linked">
                         www.wallpaperswide.com
                     </a>
